@@ -1,6 +1,8 @@
 # MRI-Diffusion
 Exploring diffusion modelling as a method for interpolation and extrapolation on human brain MRI image data.
 
+This notebook lays out the diffusion model architecture used, as well as a training loop to train the model with implemented learning rate and corruption noise scheduling. The corruption_channels parameter allows the user to specify the type of training experiment they wish to carry out. Indexes can be specified to corrupt specific slices in the input set of 5 consecutive MRI images. This is a flexible approach to carrying out training for multiple different objectives, such as interpolation, extrapolation and pure image generation.
+
 # Hyper Parameters
 ## num_decoders
 This parameter defines how many corruption blocks and Unets will exist in the model.
